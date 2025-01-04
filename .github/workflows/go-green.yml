@@ -44,7 +44,7 @@ jobs:
           git commit -m "${arr[$rand]}"
 
       - name: GitHub Push
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_GH }}
-        run: |
-          git push origin master
+        uses: ad-m/github-push-action@master
+        with:
+          force: true
+          github_token: ${{ secrets.TOKEN_GH }}
