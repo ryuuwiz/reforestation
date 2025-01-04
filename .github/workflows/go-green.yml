@@ -45,6 +45,6 @@ jobs:
 
       - name: GitHub Push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN_GH }}
         run: |
           git push origin master
