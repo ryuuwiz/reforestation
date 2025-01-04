@@ -12,8 +12,8 @@ jobs:
   auto_commit:
     runs-on: ubuntu-latest
     steps:
-       - uses: actions/checkout@v3
-         with:
+      - uses: actions/checkout@v3
+        with:
           persist-credentials: false
           fetch-depth: 0
 
@@ -38,7 +38,6 @@ jobs:
           arr[7]="feat: 💰 [Go-Green] Take The Harvest"
           arr[8]="feat: 🍀 [Go-Green] Github Go Green"
           arr[9]="feat: 🛍 [Go-Green] Say No To Plastic Bags"
-        
 
           rand=$[$RANDOM % ${#arr[@]}]
 
